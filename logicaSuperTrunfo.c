@@ -145,6 +145,77 @@ if (superPoder1 > superPoder2) {
     printf("As duas cidades têm o mesmo super poder.\n");
 }
 
+//parte 2 - implementando menu interativo.
+//entrada da opcao
+int opcao;
+
+printf("Escolha um atributo para comparar!\n");
+printf("1. Populacao\n");
+printf("2. Area\n");
+printf("3. PIB\n");
+printf("4. Numero de pontos turisticos\n");
+printf("5. Densidade demográfica\n");
+scanf("%d", &opcao);
+
+switch (opcao)  //começa o menu interativo
+{
+case 1:
+    if(populacao1 > populacao2){
+        printf("A cidade 1 venceu!");
+    }else if (populacao1 == populacao2){
+        printf("empate!");
+    }else{
+        printf("a cidade 2 venceu!");
+    }
+    break;
+case 2:
+if(areaEmKm1 > areaEmKm2){
+        printf("A cidade %s venceu!\n", nomeDaCidade1);
+    }else if (areaEmKm1 == areaEmKm2){
+        printf("empate!\n");
+    }else{
+        printf("a cidade %s venceu!\n", nomeDaCidade2);
+    }
+    break;
+    case 3:
+if(pib1 > pib2){
+        printf("A cidade %s venceu!\n", nomeDaCidade1);
+    }else if (pib1 == pib2){
+        printf("empate!\n");
+    }else{
+        printf("a cidade %s venceu!\n", nomeDaCidade2);
+    }
+    break;
+case 4:
+if(numDeTuristicos1 > numDeTuristicos2){
+        printf("A cidade %s venceu!\n", nomeDaCidade1);
+    }else if (numDeTuristicos1 == numDeTuristicos2){
+        printf("empate!\n");
+    }else{
+        printf("a cidade %s venceu!\n", nomeDaCidade2);
+    }
+    break;
+    case 5:
+if(densidadePopulacional1 < densidadePopulacional2){
+        printf("A cidade %s venceu!\n", nomeDaCidade1);
+    }else if (densidadePopulacional1 == densidadePopulacional2){
+        printf("empate!\n");
+    }else{
+        printf("a cidade %s venceu!\n", nomeDaCidade2);
+    }
+    break;
+
+default:
+printf("Opcao invalida.");
+    break;
+}
+
+
+
+
+
+
+
 return 0;
 
 }
