@@ -2,7 +2,7 @@
 
 int main() {
     //variaveis da carta1
-    char estado1;
+    char estado1[3];
     char codigoDaCarta1[50];
     char nomeDaCidade1[50];
     unsigned long int populacao1;
@@ -11,7 +11,7 @@ int main() {
     int numDeTuristicos1;
 
     //variaveis da carta2
-    char estado2;
+    char estado2[3];
     char codigoDaCarta2[50];
     char nomeDaCidade2[50];
     unsigned long int populacao2;
